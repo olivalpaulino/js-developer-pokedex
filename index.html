@@ -1,11 +1,31 @@
+<!--
+    Author: Olival Paulino
+    Description: 
+    A melhor visualização do código acontece nas dimensões de 320px a 550px (ainda não adicionei responsividade a todas as telas)
+    Inserir os arquivos:
+    - poke-api2.js
+    - pokemon-model2.js
+    Adicionei esses arquivos para demonstrar que entendi o funcionamento e dividir a responsabilidade do trecho de código. O dividi em duas partes, que são:
+    1. Apresentação da listagem dos pokemons
+    2. Apresentação dos detalhes de cada pokemon dinamicamente ao clicar na imagem de cada um
+
+    Para este projeto realizei o fork e o clonei para o meu repositorio local. Abaixo deixo o respositorio do projeto com as minhas contribuições:
+    Github: https://github.com/olivalpaulino/js-developer-pokedex
+-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Olival Paulino">
+    <meta name="email" content="olivalpaulinocc@gmail.com">
+    <meta name="linkedin" content="https://www.linkedin.com/in/olivalpaulino/">
+    <meta name="description" content="Minha contribuição ao projeto pokedex da Digital Inovation One - Bootcamp Orange Tech+. Instrutor: Renan Johannsen.">
+    <meta name="keywords" content="pokedex, dio, javascript, projeto javascript, programação assincrona javascript, orientação a objetos javascript, digital inovation one, olival paulino, olival, olival paulino dos santos neto, renan johannsen dio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+    <title>Pokedex - Olival</title>
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -20,11 +40,18 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+
+        <!-- Arquivos javascript consumidos ao longo do projeto -->
+        <script src="/assets/js/pokemon-model.js" defer></script>
+        <script src="/assets/js/pokemon-model2.js" defer></script>
+        <script src="/assets/js/poke-api.js" defer></script>
+        <script src="/assets/js/poke-api2.js" defer></script>
+        <script src="/assets/js/main.js" defer></script>
 </head>
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
+        <h1>Pokedex - {Olival Paulino}</h1>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -36,11 +63,5 @@
             </button>
         </div>
     </section>
-
-    <!-- Nosso JS -->
-    <script src="/assets/js/pokemon-model.js"></script>
-    <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
 </body>
-
 </html>

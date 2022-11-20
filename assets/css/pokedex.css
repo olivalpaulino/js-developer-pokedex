@@ -146,6 +146,12 @@
     border-radius: 1rem;
 }
 
+#btn-voltar {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
